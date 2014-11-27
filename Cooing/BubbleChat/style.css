@@ -1,0 +1,104 @@
+.bubbledLeft,.bubbledRight{
+margin-top: 3px;
+padding: 3px 5px 3px 5px;
+max-width: 80%;
+clear: both;
+}
+
+.bubbledLeft{
+position: relative; float: left;
+margin-right: auto;
+margin-left: 36px;
+padding: 9px 10px 25px 10px;
+}
+
+.bubbledLeft:before{
+z-index: -1;
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+content: '';
+
+border-width: 6px 8px 22px 34px; 
+border-image: url(bubble_left.png) 6 8 22 34 stretch stretch;
+-webkit-border-image: url(bubble_left.png) 6 8 22 34 stretch stretch;
+-moz-border-image: url(bubble_left.png) 6 8 22 34 stretch stretch;
+-o-border-image: url(bubble_left.png) 6 8 22 34 stretch stretch;
+}
+
+.bubbledLeft:after{
+z-index: -1;
+position: absolute;
+left: -36px;
+width: 32px;
+top: 3px;
+height: 32px;
+content:'';
+
+background-size: 32px 32px;
+background-position: bottom left; 
+
+border-radius: 3px;
+-webkit-border-radius: 3px;	
+-moz-border-radius: 3px;	
+-o-border-radius: 3px;	
+-ms-border-radius: 3px;	
+}
+
+.bubbledRight{
+position: relative; float: right;
+margin-left: auto;
+margin-right: 36px;
+padding: 9px 10px 25px 10px; 
+}
+
+.bubbledRight:before{
+z-index: -1;
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+content: '';
+
+border-width: 6px 34px 22px 8px; 
+border-image: url(bubble_right.png) 6 34 22 8 stretch stretch;
+-webkit-border-image: url(bubble_right.png) 6 34 22 8 stretch stretch;
+-moz-border-image: url(bubble_right.png) 6 34 22 8 stretch stretch;
+-o-border-image: url(bubble_right.png) 6 34 22 8 stretch stretch;
+}
+
+.bubbledRight:after{
+z-index: -1;
+position: absolute;
+right: -36px;
+width: 32px;
+top: 3px;
+height: 32px;
+content:'';
+
+background-image: url(me.jpg);
+background-size: 32px 32px;
+background-position: bottom left;
+
+border-radius: 3px;
+-webkit-border-radius: 3px;	
+-moz-border-radius: 3px;	
+-o-border-radius: 3px;	
+-ms-border-radius: 3px;	
+}
+
+.here {
+	clear: both;
+}
+
+/* --------------------------------------------- */
+.bubbledLeft.friend1:after{
+	background-image: url(friend1.jpg);
+}
+
+.bubbledLeft.friend2:after{
+	background-image: url(friend2.jpg);
+}
